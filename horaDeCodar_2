@@ -1,0 +1,49 @@
+programa {
+  funcao inicio() {
+
+    inteiro primeiroNumero
+    inteiro segundoNumero
+
+    escreva("Digite o primeiro número ")
+    leia(primeiroNumero)
+
+    escreva("Digite o segundo número ")
+    leia(segundoNumero)
+
+    se(primeiroNumero > segundoNumero) {
+
+      escreva("O maior número é: ", primeiroNumero)
+    }
+
+    senao se(primeiroNumero < segundoNumero) {
+
+      escreva("O maior número é: ", segundoNumero)
+
+      ex02()
+      
+    }
+    
+  }
+
+  funcao ex02() {
+
+    inteiro numero
+
+    escreva("Digite um número ")
+    leia(numero)
+
+      se(numero > 0) {
+        escreva("O número escolhido é positivo")
+      }
+
+      senao se(numero < 0) {
+        escreva("O número escolhido é negativo")
+      }
+
+      senao {
+        escreva("O número escolhido é zero")
+      }
+  }
+
+  }
+}
