@@ -130,7 +130,77 @@ programa {
     media = soma/6
 
     escreva("A media é " , media)
-    
+
+    ex06()
+
+  }
+
+  funcao ex06() {
+
+    inteiro valor1, valor2, valor3, valor4
+
+    escreva("Digite o primeiro número ")
+    leia(valor1)
+
+    escreva("Digite o segundo número ")
+    leia(valor2)
+
+    escreva("Digite o terceiro número ")
+    leia(valor3)
+
+    escreva("Digite o quarto número ")
+    leia(valor4)
+
+    se(valor1 > valor2 e valor1 > valor3 e valor1 > valor4) {
+      escreva(valor1 , "\n" , valor4 , "\n" , valor1)
+    }
+
+    senao se(valor2 > valor1 e valor2 > valor3 e valor2 > valor4) {
+      escreva(valor1 , "\n" , valor4 , "\n" , valor2)
+    }
+
+    senao se(valor3 > valor1 e valor3 > valor2 e valor3 > valor4) {
+      escreva(valor1 , "\n" , valor4 , "\n" , valor3)
+    }
+
+    senao {
+      escreva(valor1 , "\n" , valor4 , "\n" , valor4)
+    }
+
+    ex07()
+
+  }
+
+  funcao ex07() {
+
+    inteiro numero1, numero2, numero3, numero4, numero5, numero6
+    real soma
+
+    escreva("Digite o primeiro número ")
+    leia(numero1)
+
+    escreva("Digite o segundo número ")
+    leia(numero2)
+
+    escreva("Digite o terceiro número ")
+    leia(numero3)
+
+    escreva("Digite o quarto número ")
+    leia(numero4)
+
+    escreva("Digite o quinto número ")
+    leia(numero5)
+
+    escreva("Digite o sexto número ")
+    leia(numero6)
+
+    se(numero1 < 72 e numero2 < 72 e numero3 < 72 e numero4 < 72 e numero5 < 72 e numero6 < 72) {
+
+      soma = numero1 + numero2 + numero3 + numero4 + numero5 + numero6
+
+      escreva("Os números informados foram ", numero1 , numero2 , numero3 , numero4 , numero5 , numero6 , " e a soma dos inferiores a 72 é " , soma
+ )
+    }
   }
   }
 }
