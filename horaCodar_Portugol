@@ -1,0 +1,339 @@
+programa {
+  funcao inicio() {
+    //1. Escreva um programa em que o usuário informe dois números. Então escreva em tela o maior deles.
+
+    real num1, num2
+
+    escreva("Digite o primeiro número: ")
+    leia(num1)
+    escreva("Digite o segundo número: ")
+    leia(num2)
+
+    se(num1 > num2) {
+      escreva("O maior número é: " , num1, "\n")
+    }senao {
+      escreva("O maior número é: " , num2, "\n")
+    }
+
+    ex02()
+
+  }
+
+  funcao ex02() {
+    //2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo, negativo ou zero.
+
+    real num
+
+    escreva("Digite o número escolhido: ")
+    leia(num)
+
+    se(num <= 0) {
+      escreva("O número é negativo\n")
+    }senao {
+      escreva("O número é positivo\n")
+    }
+
+    ex03()
+
+  }
+
+  funcao ex03() {
+    //3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+
+    real num1, num2, num3
+
+    escreva("Digite o primeiro valor: ")
+    leia(num1)
+    escreva("Digite o segundo valor: ")
+    leia(num2)
+    escreva("Digite o terceiro valor: ")
+    leia(num3)
+
+    se(num1 > num2 e num1 > num3) {
+      escreva("O maior valor é: " , num1 , "\n")
+    } senao se(num2 > num1 e num2 > num3) {
+      escreva("O maior número é: " , num2 , "\n")
+    } senao {
+      escreva("O maior número é: " , num3 , "\n")
+    }
+
+    ex04()
+
+  }
+
+  funcao ex04() {
+    //4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais)
+    //e escrever a soma dos 2 maiores.
+
+    real num1, num2, num3
+
+    escreva("Digite o primeiro valor: ")
+    leia(num1)
+    escreva("Digite o segundo valor: ")
+    leia(num2)
+    escreva("Digite o terceiro valor: ")
+    leia(num3)
+
+    se(num1 < num2 e num1 < num3) {
+      escreva("O resultado da soma é: " , num2 + num3 , "\n")
+    } senao se(num2 < num1 e num2 < num3) {
+      escreva("O resultado da soma é: " , num1 + num3 , "\n")
+    } senao {
+      escreva("O resultado da soma é: " , num1 + num2 , "\n")
+    }
+
+    ex05()
+
+  }
+
+  funcao ex05() {
+    //5.  Faça um programa que leia 6 valores informados pelo usuário,
+    //calcule, exiba os números informados e escreva a média aritmética desses valores lidos.
+
+    real num1, num2, num3, num4, num5, num6
+    real soma
+    real media
+
+    escreva("Digite o 1valor¨: ")
+    leia(num1)
+    escreva("Digite o 2valor¨: ")
+    leia(num2)
+    escreva("Digite o 3valor¨: ")
+    leia(num3)
+    escreva("Digite o 4valor¨: ")
+    leia(num4)
+    escreva("Digite o 5valor¨: ")
+    leia(num5)
+    escreva("Digite o 6valor¨: ")
+    leia(num6)
+
+    soma = num1 + num2 + num3 + num4 + num5 + num6
+    media = soma / 6
+
+    escreva("Os valores escolhidos foram: " , num1 , num2 , num3 , num4 , num5 , num6 , "\nA média aritmética é: " , media , "\n")
+
+    ex06()
+
+  }
+
+  funcao ex06() {
+    //6. Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro,
+    //o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+
+    real num1, num2, num3, num4
+
+    escreva("Digite o 1valor¨: ")
+    leia(num1)
+    escreva("Digite o 2valor¨: ")
+    leia(num2)
+    escreva("Digite o 3valor¨: ")
+    leia(num3)
+    escreva("Digite o 4valor¨: ")
+    leia(num4)
+
+    se(num1 > num2 e num1 > num3 e num1 > num4) {
+      escreva("O primeiro valor é: " , num1 , "\nO último valor é: " , num4 , "\nO maior valor é: " , num1 , "\n")
+    } senao se(num2 > num1 e num2 > num3 e num2 > num4) {
+      escreva("O primeiro valor é: " , num1 , "\nO último valor é: " , num4 , "\nO maior valor é: " , num2 , "\n")
+    } senao se(num3 > num2 e num3 > num3 e num3 > num4) {
+      escreva("O primeiro valor é: " , num1 , "\nO último valor é: " , num4 , "\nO maior valor é: " , num3 , "\n")
+    } senao {
+      escreva("O primeiro valor é: " , num1 , "\nO último valor é: " , num4 , "\nO maior valor é: " , num4 , "\n")
+    }
+
+    ex08()
+
+  }
+
+  funcao ex07() {
+    //7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor inferior a 72
+    //devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o usuário informou. 
+
+    real num1, num2, num3, num4, num5, num6
+    real soma
+    real resultado
+
+    escreva("Digite o 1valor¨: ")
+    leia(num1)
+    escreva("Digite o 2valor¨: ")
+    leia(num2)
+    escreva("Digite o 3valor¨: ")
+    leia(num3)
+    escreva("Digite o 4valor¨: ")
+    leia(num4)
+    escreva("Digite o 5valor¨: ")
+    leia(num5)
+    escreva("Digite o 6valor¨: ")
+    leia(num6)
+    
+    se(num1 < 72) {
+      soma = soma + num1
+      escreva(num1 , "\n")
+    } se(num2 < 72) {
+      soma = soma + num2
+      escreva(num2 , "\n")
+    } se(num3 < 72) {
+      soma = soma + num3
+      escreva(num3 , "\n")
+    } se(num4 < 72) {
+      soma = soma + num4
+      escreva(num4 , "\n")
+    } se(num5 < 72) {
+      soma = soma + num5
+      escreva(num5 , "\n")
+    } se(num6 < 72) {
+      soma = soma + num6
+      escreva(num6 , "\n")
+    }
+  }
+
+  funcao ex08() {
+    //Escreva um programa que calcule a média de quatro números informados pelo usuário, 
+    //mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média 
+    //for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra 
+    //situação, ele receberá uma mensagem de "tente novamente" 
+
+    real num1, num2, num3, num4
+    real soma = 0
+
+    escreva("Digite o 1valor¨: ")
+    leia(num1)
+
+    enquanto(num1 < 0 e num1 > 10) {
+      escreva("\nDigite um número maior que 0 e menor que 10")
+      leia(num1)
+    }
+
+    soma = soma + num1
+
+    escreva("Digite o 2valor: ")
+    leia(num2)
+
+    enquanto(num2 < 0 e num2 > 10) {
+      escreva("\nDigite um número maior que 0 e menor que 10")
+      leia(num2)
+    }
+
+    soma = soma + num2
+
+    escreva("Digite o 3valor: ")
+    leia(num3)
+
+    enquanto(num3 < 0 e num3 > 10) {
+      escreva("\nDigite um número maior que 0 e menor que 10")
+      leia(num3)
+    }
+
+    soma = soma + num3
+
+    escreva("Digite o 4valor: ")
+    leia(num4)
+
+    enquanto(num4 < 0 e num4 > 10) {
+      escreva("\nDigite um número maior que 0 e menor que 10")
+      leia(num4)
+    }
+
+    soma = soma + num4
+
+    real media = soma / 4
+
+    se(media > 5) {
+      escreva("Parabéns, você passou!\n")
+    } senao {
+      escreva("Não foi dessa vez, estude mais!\n")
+    }
+
+    ex09()
+
+  }
+
+  funcao ex09() {
+    //9. Escreva um programa para ler o ano de nascimento de uma pessoa e
+    //escrever uma mensagem que diga se ela poderá ou não votar este ano
+    //(não é necessário considerar o mês em que ela nasceu).
+
+    inteiro anoNascimento
+    inteiro anoAtual
+
+    escreva("Qual seu ano de nascimento?: ")
+    leia(anoNascimento)
+    escreva("Qual o ano atual?: ")
+    leia(anoAtual)
+
+    inteiro resultado = anoAtual - anoNascimento
+
+    se(resultado >= 16) {
+      escreva("Você pode votar!\n")
+    } senao {
+      escreva("Você ainda não pode votar\n")
+    }
+    
+    ex10()
+
+  }
+
+  funcao ex10() {
+    //10. Tendo como entrada a altura e o gênero designado ao nascer (codificado da seguinte forma: 1: feminino - 2: masculino - )
+    //de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas.
+
+    real h
+    caracter genero
+
+    escreva("Digite sua altura: ")
+    leia(h)
+    escreva("Digite seu genero: ")
+    leia(genero)
+
+    se(genero == 1) {
+      escreva("Seu peso ideal é: " , 62.1 * h - 44.7)
+    } senao {
+      escreva("Seu peso ideal é: " , 72.7 * h - 58)
+    }
+
+    ex11()
+
+  }
+
+  funcao ex11() {
+    //11. Uma micro calculadora
+    //Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes
+    //operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+    //O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos.
+
+    real num1, num2
+    inteiro operacao
+    real resultado
+
+    escreva("Digite o primeiro valor: ")
+    leia(num1)
+    escreva("Digite o segundo valor: ")
+    leia(num2)
+
+    escreva("Escolha a operação: '1' - Adição | '2' - Subtração | '3' - Multiplicação | '4' - Divisão\n")
+    leia(operacao)
+
+    se(operacao == 1) {
+      resultado = num1 + num2
+      escreva("O resultado é: " , resultado , "\n")
+    }
+
+    se(operacao == 2) {
+      resultado = num1 - num2
+      escreva("O resultado é: " , resultado , "\n")
+    }
+
+    se(operacao == 3) {
+      resultado = num1 * num2
+      escreva("O resultado é: ", resultado , "\n")
+    }
+
+    se(operacao == 4) {
+      resultado = num1 / num2
+      escreva("O resultado é: " , resultado , "\n")
+    } senao {
+      escreva("Operação inválida")
+    } 
+  }
+
+}
